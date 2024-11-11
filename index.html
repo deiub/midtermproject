@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Your Name's Portfolio</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" defer></script>
+
+      <!-- Link Bootstrap CSS -->
+      <link
+         rel="stylesheet"
+         href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+         />
+      <!-- Add custom CSS if you have any -->
+      <link rel="stylesheet" href="styles.css" />
+      <!-- Link animate.css -->
+      <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" />
+      <link rel="stylesheet" href="/fonts.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   </head>
+   <body>
+      <!-- Navbar for Small Screens (Hamburger toggle + your name) -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light d-md-none navbar-custom">
+         <!-- Name on the left side -->
+
+         <a class="navbar-brand" href="#">John Dave Lausa</a>
+         <!-- Hamburger Toggle on the Right -->
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <!-- Navbar Links (collapsed on small screens) -->
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+               <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+               <li class="nav-item"><a class="nav-link" href="#services">SERVICES</a></li>
+               <li class="nav-item"><a class="nav-link" href="#work">WORK</a></li>
+               <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+               <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+            </ul>
+         </div>
+         </div>
+      </nav>
+      <div class="mainBody">
+         <div class="sidebar-container">
+            <div class="sidebar bg-dark text-white d-none d-md-block" style="background-color: blue;" id="sidebar" >
+               <ul class="nav flex-column sidebar-list">
+                  <li>
+                     <img src="img/myProfile.png" alt="Profile Image" class="profile-img">
+                  </li>
+                  <li class="nav-item mb-3"><a class="nav-link text-white" href="#home">HOME</a></li>
+                  <li class="nav-item mb-3"><a class="nav-link text-white" href="#services">SERVICES</a></li>
+                  <li class="nav-item mb-3"><a class="nav-link text-white" href="#work">WORK</a></li>
+                  <li class="nav-item mb-3"><a class="nav-link text-white" href="#about">ABOUT</a></li>
+                  <li class="nav-item"><a class="nav-link text-white" href="#contact">CONTACT</a></li>
+               </ul>
+            </div>
+         </div>
+         <!-- Main Content -->
+         <div class="content">
+            <!-- Home Section -->
+            <section id="home" class="py-5">
+               <div class="home-container blocks">
+                  
+                  <h2>I'M A <span style="color: #E20000;"><h1>
+                     <a href="" class="typewrite" data-period="2000" data-type='[ "GAME DEVELOPER", "CREATIVE", "GAMER", "SOFTWARE ENGINEER", "LEARNER", "PROBLEM SOLVER", "THINKER", "VISIONARY"  ]'>
+                       <span class="wrap"></span>
+                     </a>
+                   </h1></span> FROM BUTUAN, PH</h2>
+                  <div class="description">
+                     <p class="mt-3 description">I am John Dave Lausa, a passionate game developer with experience in creating engaging and interactive games. <br>I specialize in game design, development, and deployment using various platforms such as Roblox and other game engines. <br>My goal is to bring creative ideas to life through game development, creating experiences that are fun, immersive, and challenging.</p>
+                  </div>
+                  <div class="wrapper">
+                     <div>
+                        <a href="#work" class="btn explore-work">Explore My Work</a>
+                     </div>
+                     <div>
+                        <p class="m-0 call-work">Call: (+63) 93 044 75164 &nbsp; &#8594;</p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!-- End of Home Section -->
+            <!-- Services Section -->
+            <section id="services" class="py-5  blocks">
+               <div class="container">
+                  <h2 class="text-center ">Game Development Services</h2>
+                  <p class="text-center mb-5">As a passionate game developer, I offer a range of services to bring your game ideas to life.</p>
+                  <div class="row ">
+                     <!-- Service 1 -->
+                     <div class="col-12 col-lg-4 col-md-12">
+                        <div class="service-card text-center">
+                           <i class="fas fa-pencil-alt fa-3x mb-3"></i> <!-- Icon for Game Design -->
+                           <h4>Game Design</h4>
+                           <p>Creative game concepts and design to ensure your game is both engaging and immersive for players.</p>
+                        </div>
+                     </div>
+                     <!-- Service 2 -->
+                     <div class="col-12 col-lg-4 col-md-12">
+                        <div class="service-card text-center">
+                           <i class="fas fa-code fa-3x mb-3"></i> <!-- Icon for Game Development -->
+                           <h4>Game Development</h4>
+                           <p>End-to-end development of your game, including coding, mechanics, and integration with various platforms.</p>
+                        </div>
+                     </div>
+                     <!-- Service 3 -->
+                     <div class="col-12 col-lg-4 col-md-12">
+                        <div class="service-card text-center">
+                           <i class="fas fa-rocket fa-3x mb-3"></i> <!-- Icon for Game Deployment -->
+                           <h4>Game Deployment</h4>
+                           <p>Deploying your game on platforms such as Roblox and others, ensuring it reaches your audience smoothly.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!-- End of Services Section -->
+            <!-- Work Section -->
+            <section id="work" class="py-5" style="background-image: url('path/to/roblox-background.jpg'); background-size: cover; background-position: center; color: white;">
+               <div class="work-container">
+                  <h2 class="work-title text-center blocks">My Roblox Games</h2>
+                  <p class="work-description text-center mb-5 blocks">Explore some of the exciting Roblox games I've developed.</p>
+                  <div class="container">
+                     <div class="row work-grid">
+                        <!-- Game 1 -->
+                        <div class="work-card col-lg-6 col-md-6 col-12 blocks">
+                           <img src="/robloxAsset/jailbreakImg.png" alt="Game 1" class="work-image1">
+                           <h4 class="work-game-title">Jailbreak</h4>
+                           <p class="game-role">Role: Level Designer & Scripter</p>
+                           <p class="work-game-desc">Designed challenging and immersive environments, scripting interactive features that engage players in the high-stakes jailbreak experience.</p>
+                           <a href="https://www.roblox.com/games/606849621/Jailbreak" target="_blank" class="work-btn">Play Now</a>
+                        </div>
+                        <!-- Game 2 -->
+                        <div class="work-card col-lg-6 col-md-6 col-12 blocks">
+                           <img src="/robloxAsset/madcityImg.png" alt="Game 2" class="work-image2">
+                           <h4 class="work-game-title">Madcity</h4>
+                           <p class="game-role">Role: Gameplay Programmer & Mechanics Designer</p>
+                           <p class="work-game-desc">Developed core gameplay mechanics and scripted interactive elements, enhancing the player experience with well-balanced challenges and character abilities.</p>
+                           <a href="https://www.roblox.com/games/2908560703/Mad-City" target="_blank" class="work-btn">Play Now</a>
+                        </div>
+                        <!-- Game 3 -->
+                        <div class="work-card col-lg-6 col-md-6 col-12 blocks">
+                           <img src="/robloxAsset/obbyGameMasterImg.png" alt="Game 3" class="work-image3">
+                           <h4 class="work-game-title">Obby Master</h4>
+                           <p class="game-role">Role: Obstacle Designer & Game Balancer</p>
+                           <p class="work-game-desc">Crafted innovative obstacle courses and balanced difficulty levels to ensure a fun and rewarding experience for players as they navigate challenging parkour stages.</p>
+                           <a href="https://www.roblox.com/games/2426059783/Obby-Master" target="_blank" class="work-btn">Play Now</a>
+                        </div>
+                        <!-- Game 4 -->
+                        <div class="work-card col-lg-6 col-md-6 col-12 blocks">
+                           <img src="/robloxAsset/DressToImpressImg.png" alt="Game 4" class="work-image4">
+                           <h4 class="work-game-title">Dress to Impress</h4>
+                           <p class="game-role">Role: UI/UX Designer & Customization Specialist</p>
+                           <p class="work-game-desc">Created an intuitive user interface and integrated character customization options, making the game visually engaging and accessible to players focused on style and fashion.</p>
+                           <a href="https://www.roblox.com/games/15101393044/Dress-To-Impress" target="_blank" class="work-btn">Play Now</a>
+                        </div>
+                        <!-- Add more games here -->
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!-- End of Work Section -->
+            <!-- About Section with ID 'about' -->
+            <section id="about" class="container ">
+               <!-- About Section Header -->
+               <div class="about-header blocks">
+                  <h1>About Me</h1>
+                  <p>Learn more about my work, skills, and experiences!</p>
+               </div>
+               <!-- My Journey and Skills -->
+               <div class="row col-12">
+                  <!-- My Journey and Skills -->
+                  <div class="row">
+                     <!-- My Journey -->
+                     <div class="col-lg-7 col-md-12 col-12 about-journey blocks">
+                        <div class="about-card about-card-description">
+                           <img src="/backgroundimg/roblox.png" alt="Profile Image" class="about-image ">
+                           <h4 class="about-title journey">My Journey</h4>
+                           <p class="about-description">
+                              I began my journey in game development by learning different programming languages and game design techniques. Over time, I honed my skills through practical experience and by working on various projects. Each project has been an opportunity to learn and grow, allowing me to apply new concepts and refine my understanding of game mechanics. I’m passionate about creating engaging experiences that immerse players in the worlds I build. My goal is to continue developing my craft and push the boundaries of what I can achieve in game development. I believe in the power of collaboration and always seek to learn from others to enhance my skills.
+                           </p>
+                        </div>
+                     </div>
+                     <!-- My Skills -->
+                     <div class="col-lg-5 col-md-12 col-12 about-skills blocks">
+                        <div class="about-card about-card-skills">
+                           <h4 class="about-title">My Skills</h4>
+                           <ul class="skills-list-a">
+                              <li>
+                                 <span>Game Design</span>
+                                 <div class="progress" style="height: 25px;">
+                                    <div class="progress-bar progress-bar-striped bg-success" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                       <span class="progress-text">80%</span>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <span>UI/UX Design</span>
+                                 <div class="progress" style="height: 25px;">
+                                    <div class="progress-bar progress-bar-striped bg-info" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                       <span class="progress-text">70%</span>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <span>Gameplay Programming</span>
+                                 <div class="progress" style="height: 25px;">
+                                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                       <span class="progress-text">85%</span>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <span>Level Design</span>
+                                 <div class="progress" style="height: 25px;">
+                                    <div class="progress-bar progress-bar-striped bg-danger" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                       <span class="progress-text">60%</span>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <span>Roblox Studio Scripting</span>
+                                 <div class="progress" style="height: 25px;">
+                                    <div class="progress-bar progress-bar-striped bg-primary" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                       <span class="progress-text">90%</span>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <span>Unity 3D</span>
+                                 <div class="progress" style="height: 25px;">
+                                    <div class="progress-bar progress-bar-striped bg-dark" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                       <span class="progress-text">75%</span>
+                                    </div>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Experience Section -->
+               <div class="row blocks">
+                  <div class="col-12">
+                     <div class="about-card">
+                        <h4 class="about-title journey">Experience</h4>
+                        <p class="about-description">
+                           Over the past few years, I’ve had the pleasure of working on a wide range of projects, each focusing on different aspects of game development. Whether it's designing engaging levels, scripting gameplay mechanics, or building smooth user interfaces, I have always strived to improve with each project.
+                        </p>
+                        <p class="about-description">
+                           Here are some of my key experiences:
+                        </p>
+                        <ul class="skills-list">
+                           <li><strong>Level Designer & Scripter</strong> - Jailbreak (Roblox) - Worked on creating challenging environments and scripting interactive features.</li>
+                           <li><strong>Gameplay Programmer & Mechanics Designer</strong> - MadCity (Roblox) - Developed core gameplay mechanics and scripted balanced challenges.</li>
+                           <li><strong>UI/UX Designer & Customization Specialist</strong> - Dress to Impress (Roblox) - Designed user interfaces and implemented character customization features.</li>
+                           <li><strong>Obstacle Course Designer & Level Creator</strong> - Obby Master (Roblox) - Designed and scripted difficult obstacle courses that challenge players' agility and problem-solving skills.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- Projects Section -->
+               <div class="row experience-project-card blocks">
+                  <!-- Jailbreak Project -->
+                  <div class="col-12 col-md-12 col-lg-3 col-sm-12 col-xs-12">
+                     <div class="project-card">
+                        <h4 class="project-title">Jailbreak</h4>
+                        <p class="about-description">
+                           A thrilling game where players try to escape from a high-security prison while others try to prevent them.
+                        </p>
+                     </div>
+                  </div>
+                  <!-- MadCity Project -->
+                  <div class="col-12 col-md-12 col-lg-3 col-sm-12 col-xs-12">
+                     <div class="project-card">
+                        <h4 class="project-title">MadCity</h4>
+                        <p class="about-description">
+                           A vast open-world game where players can choose to be a hero or villain, complete missions, and unlock new powers.
+                        </p>
+                     </div>
+                  </div>
+                  <!-- Dress to Impress Project -->
+                  <div class="col-12 col-md-12 col-lg-3 col-sm-12 col-xs-12">
+                     <div class="project-card">
+                        <h4 class="project-title">Dress to Impress</h4>
+                        <p class="about-description">
+                           A fashion-based game where players can design their own outfits and compete in fashion shows.
+                        </p>
+                     </div>
+                  </div>
+                  <!-- Obby Master Project -->
+                  <div class="col-12 col-md-12 col-lg-3 col-sm-12 col-xs-12">
+                     <div class="project-card">
+                        <h4 class="project-title">Obby Master</h4>
+                        <p class="about-description">
+                           A fun obstacle course game where players must navigate challenging courses to reach the finish line.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="contact">
+               <div class="contact-container blocks">
+                  <h4 class="contact-title">Contact</h4>
+                  <h4 class="contact-sub-title">Interested in working <br> together? Let's talk</h4>
+                  <form class="contact-form" action="#" method="POST">
+                     <!-- Name and Email Group (on the same row) -->
+                     <div class="form-row">
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                     </div>
+                     <!-- Subject Group -->
+                     <div class="form-group">
+                        <input type="text" id="subject" name="subject" required placeholder="Enter subject">
+                     </div>
+                     <!-- Message Group -->
+                     <div class="form-group">
+                        <textarea id="message" name="message" rows="4" required placeholder="Enter your message here...." style="min-height: 50px;"></textarea>
+                     </div>
+                     <!-- Submit Button -->
+                     <button type="submit" class="submit-button">Contact Me</button>
+                  </form>
+               </div>
+            </section>
+            <!-- Footer with Contact Info -->
+            <footer class="footer">
+               <div class="footer-info">
+                  <div class="footer-item">
+                     <i class="fa fa-envelope"></i>
+                     <a href="mailto:your-email@example.com">johndavelausa@gmail.com</a>
+                  </div>
+                  <div class="footer-item">
+                     <i class="fa fa-phone"></i>
+                     <span>+(63) 93 044 75164</span>
+                  </div>
+                  <div class="footer-item">
+                     <i class="fab fa-facebook"></i>
+                     <a href="https://www.facebook.com/bayoyongg" target="_blank">Facebook</a>
+                  </div>
+                  <div class="footer-item">
+                     <i class="fab fa-instagram"></i>
+                     <a href="https://www.instagram.com/_deiub" target="_blank">Instagram</a>
+                  </div>
+               </div>
+            </footer>
+         </div>
+      </div>
+      <!-- Bootstrap JavaScript (optional) -->
+      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+      <script src="script.js"></script>
+
+   </body>
+</html>

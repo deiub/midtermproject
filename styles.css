@@ -1,0 +1,752 @@
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(250, 247, 255); /* Background color (can be any color) */
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Centers the content horizontally */
+  justify-content: center;
+  /* Aligns the content at the top */
+  text-align: center;
+  align-content: center;
+  z-index: 1000;
+}
+
+#sidebar {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.171), rgb(0, 0, 0)), url('/backgroundimg/sidebar.jpg');
+  /* Linear gradient over the image */
+  background-size: cover;
+  /* Make the background image cover the whole sidebar */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Prevent the background from repeating */
+  height: 100%;
+  /* Ensure it covers the full height */
+}
+
+#sidebar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* semi-transparent black background */
+  z-index: -1;
+  /* Ensures the overlay stays behind the content */
+}
+
+
+
+
+/* Change the color of the nav links to red */
+.nav-item .nav-link {
+
+  color: rgb(255, 255, 255) !important;
+  /* Force the color to be red */
+}
+
+/* Optional: Change color on hover */
+.nav-item .nav-link:hover {
+  color: #FF0000 !important;
+  /* Dark red color when hovered */
+  font-weight: 700;
+}
+
+/* Style for profile image - Roblox-inspired with vibrant color palette */
+li .profile-img {
+  width: 180px;
+  /* Size of the profile image */
+  height: 180px;
+  border-radius: 50%;
+  /* Circular shape */
+  margin-bottom: 20px;
+  /* Space between the image and links */
+  object-fit: cover;
+  /* Ensures the image fits inside the circle without distortion */
+  border: 5px solid #13141600;
+  /* Yellow border for a vibrant look */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  /* Dark shadow for contrast */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  /* Smooth transition on hover */
+}
+
+/* Hover effect for profile image */
+li .profile-img:hover {
+  transform: scale(1.1);
+  /* Zoom-in effect when hovering */
+  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.6);
+  /* Red glow on hover */
+  border-color: #d82727;
+  /* Border turns red on hover */
+}
+
+/* Main content area moves to the right of the sidebar */
+
+.navbar-brand {
+  position: fixed;
+  top: 0;
+  right: -20px;
+  left: 0;
+  z-index: 3000;
+  padding-left: 20px;
+  background-color: white;
+}
+
+/* Navbar on small screens (Hamburger) */
+.navbar-toggler {
+  position: fixed;
+  top: 0px;
+  right: 15px;
+  z-index: 4000;
+  background-color: white;
+}
+
+/* Styling the collapsed navbar on small screens */
+.collapse {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 10px;
+  z-index: 2000;
+}
+
+
+
+/* Show the navbar links and collapse behavior */
+.navbar-nav {
+  margin-top: 15px;
+  padding: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .sidebar-container {
+      display: none;
+  }
+
+
+}
+
+/* @media (min-width: 768px) {
+  .sidebar-container  {
+      background-color: red;
+  }
+  #home {
+      background-color: red;
+  }
+
+
+} */
+
+.mainBody {
+  display: flex;
+}
+
+.mainBody .sidebar-container {
+  min-width: 300px;
+}
+
+.content {
+  width: 100%;
+}
+
+/* Mian Content */
+
+.content #home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+}
+
+
+
+
+
+
+
+#home .home-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  z-index: 1;
+  /* Ensures content stays above the overlay */
+
+  padding-right: 50px;
+}
+
+
+.content #home .home-container h2 {
+  font-size: 4.2rem;
+}
+
+
+.content #home .home-container .wrapper {
+  display: flex;
+  flex-direction: row;
+  /* Align items in a row */
+  align-items: center;
+  /* Center the items vertically */
+  gap: 20px;
+}
+
+.content #home .home-container .explore-work {
+  background-color: #d82727;
+  padding: 11px;
+  font-size: 0.9rem;
+  border-radius: 200px;
+  color: white;
+}
+
+.content #home .home-container .explore-work:hover {
+  background-color: #851717;
+
+}
+
+.content #home .home-container .call-work {
+  font-size: 0.9rem;
+}
+
+
+/* services */
+
+.content #services {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#services .services-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  /* Center it horizontally */
+}
+
+.service-card {
+  padding: 20px;
+  height: 200px;
+}
+
+.service-card i {
+  color: #d82727;
+}
+
+
+
+
+/* work */
+
+/* Work Section */
+
+
+#work {
+  padding: 60px 0;
+  text-align: start;
+}
+
+.work-container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.work-title {
+  font-size: 2rem;
+  color: #060013;
+
+
+}
+
+.work-description {
+  font-size: 1rem;
+  color: #161616;
+}
+
+
+
+.work-card {
+  padding: 20px;
+  border-style: solid;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  border-bottom-width: 10px;
+  transition: border-color 0.6s ease;
+
+}
+
+
+
+.work-card:nth-child(1):hover {
+  border-left-color: #140000;
+}
+
+.work-card:nth-child(2):hover {
+  border-right-color: #140000;
+
+}
+
+.work-card:nth-child(3):hover {
+  border-left-color: #140000;
+
+}
+
+.work-card:nth-child(4):hover {
+  border-right-color: #140000;
+
+}
+
+.work-image1,
+.work-image2,
+.work-image3,
+.work-image4 {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 18px;
+  transition: border-radius 0.3s ease;
+}
+
+.work-card:nth-child(1):hover .work-image1 {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+
+.work-card:nth-child(2):hover .work-image2 {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.work-card:nth-child(3):hover .work-image3 {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.work-card:nth-child(4):hover .work-image4 {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+
+
+.work-game-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  color: rgb(0, 4, 27);
+
+}
+
+.work-card .game-role {
+  color: rgb(0, 4, 27);
+  font-weight: 300;
+  margin: 0;
+  padding: 0 0 20px 0;
+  font-size: 0.9rem;
+
+}
+
+.work-game-desc {
+  font-size: 0.9rem;
+  color: rgb(0, 4, 27);
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.work-btn {
+  display: inline-block;
+  padding: 8px 15px;
+  color: #f8f8f8;
+  background-color: rgb(207, 0, 0);
+  ;
+  /* Roblox-themed color */
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+.work-btn:hover {
+  background-color: #d82727;
+  ;
+  /* Darker shade on hover */
+}
+
+
+/* Basic styling for the About section */
+#about {
+  padding-top: 200px;
+  padding-bottom: 300px;
+}
+
+.about-header {
+  
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+}
+
+.about-card-description,
+.about-card-skills {
+  max-height: 700px;
+  height: 800px;
+}
+
+
+.about-image {
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.about-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.journey {
+  color: #0c0606;
+}
+
+.about-description {
+  font-size: 16px;
+  color: #555;
+  padding-bottom: 13px;
+}
+
+/* Skills Section */
+.skills-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills-list-a li {
+  color: rgb(0, 0, 0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  list-style-type: none;
+}
+.skills-list li {
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Center the text inside the progress bar */
+.progress {
+  position: relative;
+  margin-bottom: 15px;
+  border-radius: 7px;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.progress-text {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+/* Projects Section */
+.project-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  max-height: 200px;
+}
+
+@media (max-width: 1143px) {
+
+  .project-card {
+      max-height: 340px;
+      height: 100%;
+  }
+}
+
+@media (max-width: 1353px) {
+  .project-card {
+      padding: 20px;
+      min-height: 270px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .project-card {
+      padding: 20px;
+      min-height: 5px;
+      height: 120px;
+  }
+}
+
+
+
+
+
+
+
+
+
+.project-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.project-link:hover {
+  background-color: #0056b3;
+}
+
+/* For larger screens (above 1250px) */
+.about-journey,
+.about-skills {
+  display: block;
+}
+
+/* For screens below 1250px */
+@media (max-width: 1250px) {
+
+  .about-journey,
+  .about-skills {
+      width: 100%;
+      /* Ensure each section takes full width */
+      margin-bottom: 20px;
+      /* Optional: add spacing between sections */
+  }
+}
+
+
+/* Contact Me Section Styling */
+
+#contact {
+  height: 80vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #d82727;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  /* Set a max-width for the form */
+}
+
+.form-row input {
+  width: 48%;
+  /* Set both Name and Email to 48% to fit in the row */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-row input:last-child {
+  margin-left: 4%;
+  /* Space between the Name and Email fields */
+}
+
+.form-group {
+  width: 100%;
+  max-width: 600px;
+  /* Set a max-width for the form fields */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  /* Full width for Subject and Message */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  /* Space between fields */
+}
+
+.submit-button {
+  padding: 12px 20px;
+  background-color: #FF0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  /* Space above the button */
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #d82727;
+}
+
+.contact-sub-title {
+  font-size: 2.8rem;
+  padding: 0px 20px 26px 20px;
+}
+
+
+/* Footer Styling */
+.footer {
+  background-color: #131416;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-item i {
+  color: #d82727;
+  font-size: 20px;
+}
+
+.footer-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-item a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+
+  .contact-form,
+  .footer-info {
+      flex-direction: column;
+  }
+
+  .contact-title {
+      font-size: 20px;
+  }
+}
+
+.blocks {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes appear {
+  from {
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translate(0px);
+  }
+}
+
+@media (max-width: 281px) {
+  .navbar .navbar-brand {
+      display: none;
+  }
+}
+
+/* Apply a continuous animation to the progress-bar-striped */
+@keyframes progress-bar-stripes {
+  0% {
+      background-position: 0px 40px;
+  }
+
+  100% {
+      background-position: 0 0;
+  }
+}
+
+/* Apply the animation to the progress-bar-striped */
+.progress-bar-striped {
+  animation: progress-bar-stripes 1s linear infinite;
+  background-size: 40px 40px;
+  /* Set the size of the stripes */
+}
+
+.typewrite {
+  text-decoration: none;
+  color: red;
+  font-weight: 700px;
+  font-size: 80px;
+  padding: 0;
+  margin: 0;
+}
