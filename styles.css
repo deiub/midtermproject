@@ -5,7 +5,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(250, 247, 255); /* Background color (can be any color) */
+  background-color: rgb(250, 247, 255);
+  /* Background color (can be any color) */
 }
 
 .sidebar {
@@ -146,12 +147,12 @@ li .profile-img:hover {
 }
 
 /* @media (min-width: 768px) {
-  .sidebar-container  {
-      background-color: red;
-  }
-  #home {
-      background-color: red;
-  }
+.sidebar-container  {
+    background-color: red;
+}
+#home {
+    background-color: red;
+}
 
 
 } */
@@ -405,7 +406,7 @@ li .profile-img:hover {
 }
 
 .about-header {
-  
+
   text-align: center;
   margin-bottom: 30px;
 }
@@ -461,6 +462,7 @@ li .profile-img:hover {
   border-radius: 5px;
   list-style-type: none;
 }
+
 .skills-list li {
   color: rgb(0, 0, 0);
   margin-bottom: 10px;
